@@ -380,8 +380,8 @@ while True:
                 else:
                     prediction = pred.eval({X: test_input})
                     if prediction[0][1]>prediction[0][0]:
-                        print('Genuine Image')
-                        response='Genuine Image'
+                        print('Genuine Signature')
+                        response='Genuine Signature'
                         
                         cardDict={
                         "id": system_id,
@@ -396,8 +396,8 @@ while True:
 
                         return True
                     else:
-                        print('Forged Image')
-                        response='Forged Image'
+                        print('Forged Signature')
+                        response='Forged Signature'
 
                         cardDict={
                         "id": system_id,

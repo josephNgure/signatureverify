@@ -2,13 +2,13 @@
 {% block replace %}
 <CENTER>
 <div class="jumbotron">
-  <h1 class="display-4">Welcome to DataFlair<br>Hello {{ user_pr.user_id }}</h1>
-  <p class="lead">its an awesome profile picture</p>
+  {% comment %} <h1 class="display-4">Signature Verify system</h1> {% endcomment %}
+  <p class="lead">verfiying signatures</p>
   <hr class="my-4">
   <img src="{{ user_pr.signature.url }}" class="image_responsive" height="100px" width="100px">
   <p>
-    {{ user_pr.signature.url }}<BR>
-   You have learned some awesome technologies like:::: {{ response }}</p>
+    
+   The uploaded image is a:: <b>{{ response }}</b></p>
 </div>
 </CENTER>
 {% endblock %}
